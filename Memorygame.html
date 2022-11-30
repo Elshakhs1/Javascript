@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="memorygame.css" />
+</head>
+<body>
+    
+    <h1>Memory Game</h1>
+
+    <table id="mainMenu">
+        <tr>
+            <th>
+                Menu
+            </th>
+        </tr>
+        <tr>
+            <td onclick="createGame()">
+                Create game
+            </td>
+        </tr>
+    </table>
+
+    <table style="visibility:hidden" id="createGame">
+        <tr>
+            <th>
+                Select the size of the field
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <select>
+                    <option>
+                        3x4
+                    </option>
+                    <option>
+                        4x4
+                    </option>
+                    <option>
+                        5x4
+                    </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="start()">
+                Start
+            </td>
+        </tr>
+    </table>
+
+    <table style="visibility: hidden; margin: 0px auto 0px auto" id="field1">
+        <tr>
+            <td id="a1">
+                <div class="card" onclick="takeImage(0)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p1" />
+                </div>
+            </td>
+            <td id="a2">
+                <div class="card" onclick="takeImage(1)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p2" />
+                </div>
+            </td>
+            <td id="a3">
+                <div class="card" onclick="takeImage(2)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p3" />
+                </div>
+            </td>
+            <td id="a4">
+                <div class="card" onclick="takeImage(3)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p4" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="a5">
+                <div class="card" onclick="takeImage(4)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p5" />
+                </div>
+            </td>
+            <td id="a6">
+                <div class="card" onclick="takeImage(5)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p6" />
+                </div>
+            </td>
+            <td id="a7">
+                <div class="card" onclick="takeImage(6)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p7" />
+                </div>
+            </td>
+            <td id="a8">
+                <div class="card" onclick="takeImage(7)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p8" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="a9">
+                <div class="card" onclick="takeImage(8)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p9" />
+                </div>
+            </td>
+            <td id="a10">
+                <div class="card" onclick="takeImage(9)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p10" />
+                </div>
+            </td>
+            <td id="a11">
+                <div class="card" onclick="takeImage(10)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p11" />
+                </div>
+            </td>
+            <td id="a12">
+                <div class="card" onclick="takeImage(11)">
+                    <img class="front" src="image-front.png" alt="backImg" />
+                    <img class="back" alt="backImg" id="p12" />
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script src="memorygame.js"></script>
+</body>
+</html>
